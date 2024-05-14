@@ -1,0 +1,139 @@
+
+
+.nav {
+    height: 80px;
+    width: 100%;
+}
+
+.background-nav {
+    background-color: #565676;
+    color: white;
+}
+
+
+.navbar-pink a {
+    color: #c23e4f;
+}
+
+.navbar-pink a:hover {
+    color: #bd9197;
+}
+
+.active-link {
+    color: white;
+    font-weight: 900;
+}
+
+.navbar-pink a:visited {
+    color: #c23e4f;
+}
+
+.bg-pink {
+    color: white;
+    background: linear-gradient(250deg, green, #8cc10a)
+}
+
+/* 
+.cuerpo {
+    align-items: center;
+    background: grey;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+.slider {
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+    height: 400px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 95%;
+}
+
+.slider::before,
+.slider::after {
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    -webkit-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider .slide-track {
+    -webkit-animation: scroll 20s linear infinite;
+    animation: scroll 20s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+
+}
+
+.slider .slide {
+    height: 50px;
+    width: 250px;
+}
+
+.slide img {
+    height: 400px;
+    width: 100%;
+}
+ */
+
+
+
+
+
+@keyframes trans {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+.animacion {
+    width: 100%;
+    white-space: nowrap;
+    padding: 72px 0px;
+    overflow-x: hidden;
+}
+
+.lineal {
+    display: inline-block;
+    animation: 20s trans infinite linear;
+}
+
+.lineal img {
+    height: 300px;
+    margin: 0px 15px;
+    border-radius: 25px;
+}
+

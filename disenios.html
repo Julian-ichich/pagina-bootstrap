@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./assets/icons/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg background-nav navbar-pink nav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active-link" aria-current="page" href="#">menu 1</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">menu 2</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">menu 3</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-start">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3  bg-pink">
+                <div class="row pt-5">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Filtros</button>
+
+                    <div class="offcanvas offcanvas-start bg-transparent" data-bs-scroll="true" data-bs-backdrop="false"
+                        tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title text-white" id="offcanvasScrollingLabel">Seleccione sus opciones
+                            </h5>
+                            <button type="button" class="btn-close btn btn-outline-dark" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="col-12 text-center text-white">
+                                <h4>Filtros por categoria</h4>
+                            </div>
+                            <div class="accordion shadow-lg p-3 mb-5 bg-body-tertiary rounded" id="accordionExample">
+                                <div class="accordion-item ">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button bg-pink" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Categoria
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+
+                                            <ul class="list-group">
+                                                <li class="list-group-item">
+                                                    <input class="form-check-input me-1" type="checkbox" value=""
+                                                        id="firstCheckboxStretched">
+                                                    <label class="form-check-label stretched-link"
+                                                        for="firstCheckboxStretched">First checkbox</label>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <input class="form-check-input me-1" type="checkbox" value=""
+                                                        id="secondCheckboxStretched">
+                                                    <label class="form-check-label stretched-link"
+                                                        for="secondCheckboxStretched">Second checkbox</label>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <input class="form-check-input me-1" type="checkbox" value=""
+                                                        id="thirdCheckboxStretched">
+                                                    <label class="form-check-label stretched-link"
+                                                        for="thirdCheckboxStretched">Third checkbox</label>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <input class="form-check-input me-1" type="checkbox" value=""
+                                                        id="fourtinCheckboxStretched">
+                                                    <label class="form-check-label stretched-link"
+                                                        for="fourtinCheckboxStretched">Second checkbox</label>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <input class="form-check-input me-1" type="checkbox" value=""
+                                                        id="fiftenCheckboxStretched">
+                                                    <label class="form-check-label stretched-link"
+                                                        for="fiftenCheckboxStretched">Third checkbox</label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed bg-pink" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            Marca
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Samsung
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckChecked">
+                                                <label class="form-check-label" for="flexCheckChecked">
+                                                    LG
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Xiaomi
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckChecked">
+                                                <label class="form-check-label" for="flexCheckChecked">
+                                                    Sony
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Apple
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed bg-pink" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Precio
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                    id="flexRadioDefault1">
+                                                <label class="form-check-label" for="flexRadioDefault1">
+                                                    Q0-Q500
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                    id="flexRadioDefault2">
+                                                <label class="form-check-label" for="flexRadioDefault2">
+                                                    Q501-Q1000
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                    id="flexRadioDefault1">
+                                                <label class="form-check-label" for="flexRadioDefault1">
+                                                    Q1001-Q3000
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                    id="flexRadioDefault2">
+                                                <label class="form-check-label" for="flexRadioDefault2">
+                                                    Q3001-Q5000
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed bg-pink" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapsefour"
+                                            aria-expanded="false" aria-controls="collapsefour">
+                                            Pais
+                                        </button>
+                                    </h2>
+                                    <div id="collapsefour" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                    id="flexRadioDefault1">
+                                                <label class="form-check-label" for="flexRadioDefault1">
+                                                    Guatemala
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                    id="flexRadioDefault2">
+                                                <label class="form-check-label" for="flexRadioDefault2">
+                                                    Mexico
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                    id="flexRadioDefault1">
+                                                <label class="form-check-label" for="flexRadioDefault1">
+                                                    El Salvador
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                    id="flexRadioDefault2">
+                                                <label class="form-check-label" for="flexRadioDefault2">
+                                                    Honduras
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-9 ">
+                <div class="row  m-5 text-center">
+                    <div class="col-4">
+                        <div class="card" style="width: 100%;">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb1W1Dcfm0tMZfktCar7L0P3q3QpTClTCuXW0YWK37-Q&s"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card" style="width: 100%;">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb1W1Dcfm0tMZfktCar7L0P3q3QpTClTCuXW0YWK37-Q&s"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card" style="width: 100%;">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb1W1Dcfm0tMZfktCar7L0P3q3QpTClTCuXW0YWK37-Q&s"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row  m-5 text-center">
+                    <div class="col-4">
+                        <div class="card" style="width: 100%;">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb1W1Dcfm0tMZfktCar7L0P3q3QpTClTCuXW0YWK37-Q&s"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card" style="width: 100%;">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb1W1Dcfm0tMZfktCar7L0P3q3QpTClTCuXW0YWK37-Q&s"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card" style="width: 100%;">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb1W1Dcfm0tMZfktCar7L0P3q3QpTClTCuXW0YWK37-Q&s"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row  m-5 text-center">
+                    <div class="col-4">
+                        <div class="card" style="width: 100%;">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb1W1Dcfm0tMZfktCar7L0P3q3QpTClTCuXW0YWK37-Q&s"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card" style="width: 100%;">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb1W1Dcfm0tMZfktCar7L0P3q3QpTClTCuXW0YWK37-Q&s"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card" style="width: 100%;">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb1W1Dcfm0tMZfktCar7L0P3q3QpTClTCuXW0YWK37-Q&s"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row border-top border-success">
+            <div class="col-12 d-flex justify-content-center column-gap-3">
+                <div class="card mb-3 mt-5" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-4">
+                            <img class="rounded-circle"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQEIYxcOPf-CP7Hkk2r-B9r9eHYO2faFdXdZFvkzvlpA&s"
+                                class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 mt-5" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-4">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQEIYxcOPf-CP7Hkk2r-B9r9eHYO2faFdXdZFvkzvlpA&s"
+                                class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 d-flex justify-content-center column-gap-3">
+                <div class="card mb-3 mt-5" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-4">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQEIYxcOPf-CP7Hkk2r-B9r9eHYO2faFdXdZFvkzvlpA&s"
+                                class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 mt-5" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-4">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQEIYxcOPf-CP7Hkk2r-B9r9eHYO2faFdXdZFvkzvlpA&s"
+                                class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="animacion">
+        <div class="lineal">
+            <img src="./img/iphone.jpeg" alt="">
+            <img src="./img/airpodsmax.jpeg" alt="">
+            <img src="./img/mackbook.jpeg" alt="">
+            <img src="./img/vision.jpeg" alt="">
+            <img src="./img/s24.jpeg" alt="">
+            <img src="./img/zflip.jpeg" alt="">
+            <img src="./img/audifonossony.jpeg" alt="">
+
+
+        </div>
+        <div class="lineal">
+            <img src="./img/iphone.jpeg" alt="">
+            <img src="./img/airpodsmax.jpeg" alt="">
+            <img src="./img/mackbook.jpeg" alt="">
+            <img src="./img/vision.jpeg" alt="">
+            <img src="./img/s24.jpeg" alt="">
+            <img src="./img/zflip.jpeg" alt="">
+            <img src="./img/audifonossony.jpeg" alt="">
+
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid p-4" style=" background-color: rgb(138, 138, 138)">
+        <div class="row">
+            <div class=" col-3">
+                <div class="row">
+                    <div class="col-4 ps-3">
+                        <i class="bi bi-facebook fs-1 text-white"></i>
+                    </div>
+                    <div class="col-4 ps-3">
+                        <i class="bi bi-whatsapp fs-1 text-white"></i>
+                    </div>
+                    <div class="col-4 ps-3">
+                        <i class="bi bi-instagram fs-1 text-white"></i>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <div class="col-4">
+                        <button type="button" class="btn btn-success" style="width: 55%; font-size: 8px;">ingresar</button>
+                    </div>
+                    <div class="col-4">
+                        <button type="button" class="btn btn-success" style="width: 55%; font-size: 8px;">ingresar</button>
+                    </div>
+                    <div class="col-4">
+                        <button type="button" class="btn btn-success" style="width: 55%; font-size: 8px;">ingresar</button>
+                    </div>
+                </div>
+             
+            </div>
+    
+    
+            <div class="col-9">
+    
+                <div class="row">
+                    <div class="col-4 text-center">
+                        <h6 class="text-uppercase fw-bold">Productos</h6>
+                        <p>
+                            <a href="#!" class="text-black">tecnologia</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-black">computadoras</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-black">televisores</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-black">telefonos</a>
+                        </p>
+                    </div>
+    
+                    <div class="col-4 text-center">
+    
+                        <h6 class="text-uppercase fw-bold">links</h6>
+                        <p>
+                            <a href="#!" class="text-black">atencion al cliente</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-black">derechos</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-black">privacidad</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-black">ayuda</a>
+                        </p>
+                    </div>
+    
+                    <div class="col-4 text-center">
+                        <h6 class="text-uppercase fw-bold">Contacto</h6>
+                        <p>
+                            <a href="#!" class="text-black">atencion al cliente</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-black">derechos</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-black">privacidad</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-black">ayuda</a>
+                        </p>
+                    </div>
+    
+                </div>
+    
+            </div>
+
+        </div>
+       
+    </div>
+
+
+
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
